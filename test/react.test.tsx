@@ -1,7 +1,8 @@
-import React from 'react';
-import {render, screen} from '@testing-library/react'
-it(`should be render `, ()=>{
-    render(<div>test</div>);
+import { render, screen } from "@testing-library/react";
+import React from "react";
 
-    expect(screen.getByText('test')).toBeInTheDocument()
-})
+it(`should be render `, () => {
+	render(<div>test</div>);
+
+	expect(screen.getByText("test")).toBeInTheDocument();
+});
