@@ -1,0 +1,6 @@
+{
+  "singleAttributePerLine": true,
+  "bracketSpacing": true,
+  "printWidth": 80,
+  "useTabs": true
+}
