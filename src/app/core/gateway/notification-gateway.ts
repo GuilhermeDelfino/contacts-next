@@ -4,5 +4,5 @@ export type NotificationParams = {
 	recipientId: string;
 };
 export interface NotificationGateway {
-	sendNotification(notification: NotificationParams): void;
+	sendNotification(notification: NotificationParams): Promise<void>;
 }
