@@ -1,11 +1,11 @@
 import {
+	HttpClient,
+	HttpStatusCode,
+} from "@/app/core/data/protocols/http/http-client";
+import {
 	NotificationGateway,
 	NotificationParams,
 } from "@/app/core/gateway/notification-gateway";
-import {
-	HttpClient,
-	HttpStatusCode,
-} from "@/app/core/protocols/http/http-client";
 
 export class RemoteNotificationGateway implements NotificationGateway {
 	constructor(

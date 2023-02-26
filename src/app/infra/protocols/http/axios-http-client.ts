@@ -4,7 +4,7 @@ import {
 	HttpClient,
 	HttpRequest,
 	HttpResponse,
-} from "@/app/core/protocols/http/http-client";
+} from "@/app/core/data/protocols/http/http-client";
 
 export class AxiosHttpClient implements HttpClient {
 	async request<R = any, D = any>({
