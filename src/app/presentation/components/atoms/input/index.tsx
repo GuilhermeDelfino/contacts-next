@@ -1,13 +1,19 @@
-import { HTMLAttributes } from "react";
+import React, { HTMLAttributes, HTMLInputTypeAttribute, Ref } from "react";
 
 import * as S from "./styles";
 
-export const Input: React.FC<HTMLAttributes<HTMLInputElement>> = ({
-	...props
-}) => {
+export type InputProps = HTMLAttributes<HTMLInputElement> & {
+	ref?: Ref<HTMLInputElement>;
+	value?: string;
+	type: HTMLInputTypeAttribute;
+};
+export const Input: React.FC<InputProps> = ({ ...props }) => {
 	return (
 		<>
-			<S.Input {...props} />
+			<S.Input
+				{...props}
+				type={props.type || "text"}
+			/>
 		</>
 	);
 };
