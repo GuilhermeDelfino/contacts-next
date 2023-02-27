@@ -1,7 +1,7 @@
 import {
 	NotificationGateway,
 	NotificationParams,
-} from "../../data/gateway/notification-gateway";
+} from "../../../data/gateway/notification-gateway";
 
 export class SendNotification {
 	constructor(private readonly gateway: NotificationGateway) {}
